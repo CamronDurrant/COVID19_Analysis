@@ -104,7 +104,7 @@ AND dea.date = vac.date
 --WHERE dea.continent IS NOT NULL
 --ORDER BY 2,3
 
-SELECT *, (#OfPeopleVaccinated/Population)*100
+SELECT * (#OfPeopleVaccinated/Population)*100
 FROM PopulationVaccinatedInPercent
 
 --This is a view i created to make visulizations later in tableau
@@ -119,6 +119,6 @@ ON dea.location = vac.location
 AND dea.date = vac.date
 WHERE dea.continent IS NOT NULL
 --ORDER BY 2,3
-f
+
 SELECT *
 FROM PopulationVaccinatedInPercent
